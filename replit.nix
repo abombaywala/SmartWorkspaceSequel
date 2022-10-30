@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.dmidecode
     pkgs.python38Full
   ];
   env = {
