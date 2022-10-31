@@ -2,7 +2,9 @@ import os
 
 def find_rc(rc_name=".examplerc"):
     """
-    Your tool might look first for an environment variable that defines which .rc file to use, and in its absence, check the working directory, and then the user’s home directory and lastly the curr dir of this file.
+    Your tool might look first for an environment variable that defines which .rc file to use, 
+and in its absence, check the working directory, and then the user’s home directory 
+and lastly the curr dir of this file.
     """
     
     # Check for Env variable
