@@ -21,7 +21,7 @@ if __name__ == '__main__':
         # Get position after name flag
         name_index = sys.argv.index('--name') + 1
         if name_index < len(sys.argv):
-            name = sys.argv[name_index]
+            target = sys.argv[name_index]
 
     if '--greeting' in sys.argv:
         # Get position after greeting flag
@@ -29,6 +29,6 @@ if __name__ == '__main__':
         if greeting_index < len(sys.argv):
             greeting = sys.argv[greeting_index]
 
-    say_it(greeting, name)
+    say_it(greeting, target)
 
 
