@@ -1,6 +1,8 @@
 '''
 Generators
-You can use generators in a similar way as range objects. They perform some operation on data in chunks as requested. They pause their state in between calls. This means that you can store variables that are needed to calculate output, and they are accessed every time the generator is called.
+You can use generators in a similar way as range objects. They perform some operation on data in chunks as requested. 
+They pause their state in between calls. This means that you can store variables that are needed to calculate output, 
+and they are accessed every time the generator is called.
 To write a generator function, use the yield keyword rather than a return statement.
 generator keeps track of its state, and hence the variable n in each call to the generator reflects the value previously set.
 
