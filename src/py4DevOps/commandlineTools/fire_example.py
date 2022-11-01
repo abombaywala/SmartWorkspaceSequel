@@ -6,8 +6,7 @@ import fire
 
 
 class Ships():
-    def sail(self):
-        ship_name = 'Your ship'
+    def sail(self, ship_name = 'Your ship'):
         print(f"{ship_name} is setting sail")
 
     def list(self):
@@ -15,7 +14,7 @@ class Ships():
         print(f"Ships: {','.join(ships)}")
 
 
-def sailors(greeting, name):
+def sailors(greeting='hello', name='Jimmy'):
     message = f'{greeting} {name}'
     print(message)
 

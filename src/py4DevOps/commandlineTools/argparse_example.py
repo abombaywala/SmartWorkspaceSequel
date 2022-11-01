@@ -33,7 +33,9 @@ if __name__ == '__main__':
     ship_parser =  subparsers.add_parser('ships', 
                                          help='Ship related commands')
     ship_parser.add_argument('command',
-                             choices=['list', 'sail'])
+                             choices=['list', 'sail'],
+                             default='list',
+                             help='Enter list or Sail')
 
 
     sailor_parser = subparsers.add_parser('sailors',

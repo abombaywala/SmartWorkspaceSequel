@@ -27,7 +27,7 @@ def list_ships():
 
 @cli.command(help='Talk to a sailor')
 @click.option('--greeting', default='Ahoy there', help='Greeting for sailor')
-@click.argument('name')
+@click.argument('name', default='Columbus')
 def sailors(greeting, name):
     message = f'{greeting} {name}'
     print(message)
